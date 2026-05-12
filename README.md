@@ -1,19 +1,19 @@
 # CLASE-5-CULTURA-DIGITAL-
 3_A Clase 5 Cultura Digital Natasha 
-# Calculadora de IMC de una persona
-nombre = input("Nombre del paciente: ")
-peso = float(input("Peso en kg: "))
-altura = float(input("Altura en metros: "))
+# Control de signos vitales
 
-imc = peso / (altura ** 2)
+presion = input("Presión arterial: ")
+pulso = int(input("Pulso (ppm): "))
+temperatura = float(input("Temperatura (°C): "))
 
-print(f"\n--- Resultado para {nombre} ---")
-print(f"IMC: {imc:.2f}")
+print("\n--- Signos Vitales ---")
+print(f"Presión: {presion}")
 
-if imc < 18.5:
-    print("Estado: Bajo peso")
-elif imc < 25:
-    print("Estado: Peso normal")
-elif imc < 30:
-    print("Estado: Sobrepeso")
+if pulso < 60 or pulso > 100:
+    print(f"Pulso: {pulso}  Anormal")
 else:
+    print(f"Pulso: {pulso}  Normal")
+if temperatura > 37.5:
+    print(f"Temperatura: {temperatura}°C  Fiebre")
+else:
+    print(f"Temperatura: {temperatura}°C  Normal")
