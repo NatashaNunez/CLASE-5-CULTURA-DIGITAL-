@@ -1,7 +1,6 @@
 # CLASE-5-CULTURA-DIGITAL-
 3_A Clase 5 Cultura Digital Natasha 
-# Calculadora de IMC para enfermería
-
+# Calculadora de IMC de una persona
 nombre = input("Nombre del paciente: ")
 peso = float(input("Peso en kg: "))
 altura = float(input("Altura en metros: "))
@@ -18,4 +17,3 @@ elif imc < 25:
 elif imc < 30:
     print("Estado: Sobrepeso")
 else:
-    print("Estado: Obesidad")
